@@ -1,4 +1,6 @@
 /* Utilities */
+
+/* Buttons */
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -18,6 +20,52 @@
     transform: scale(.98);
 }
 
+/* Backgrounds and coloured buttons */
+.bg-primary,.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-seconday,.btn-seconday{
+    background-color: var(--seconday-color);
+    color: #fff;
+}
+
+.bg-dark,.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light,.btn-light{
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.bg-light a,.btn-light a,.bg-dark a,.btn-dark a,.bg-seconday a,.btn-seconday a,.bg-primary a,.btn-primary a{
+    color: #fff;
+}
+
+/* Text sizes */
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -28,6 +76,39 @@
 .text-center{
     text-align: center;
 }
+
+/* Flex-box card and grids */
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
 /* Margin */
 
 .my-1{
@@ -70,6 +151,26 @@
     margin: 4rem;
 }
 
+/* Paddings */
+.py-1{
+    padding: 1rem;
+}
+
+.py-2{
+    padding: 1.5rem;
+}
+
+.py-3{
+    padding: 2rem;
+}
+
+.py-4{
+    padding: 3rem;
+}
+
+.py-5{
+    padding: 4rem;
+}
 
 .p-1{
     padding: 1rem;
@@ -91,31 +192,3 @@
     padding: 4rem;
 }
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.card{
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 10px;
-}
-
-.grid-3{
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
