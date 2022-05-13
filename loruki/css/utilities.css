@@ -1,5 +1,17 @@
 /* Utilities */
 
+
+/* Cards */
+.card{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+}
+
+
 /* Buttons */
 .btn{
     display: inline-block;
@@ -41,11 +53,27 @@
     color: #333;
 }
 
-.bg-light a,.btn-light a,.bg-dark a,.btn-dark a,.bg-seconday a,.btn-seconday a,.bg-primary a,.btn-primary a{
+.bg-dark a,.btn-dark a,.bg-seconday a,.btn-seconday a,.bg-primary a,.btn-primary a{
     color: #fff;
 }
 
 /* Text sizes */
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-seconday{
+    color: var(--seconday-color);
+}
+
+.text-dark{
+    color: var(--dark-color);
+}
+
+.text-light{
+    color: var(--light-color);
+}
+
 .lead{
     font-size: 20px;
 }
@@ -77,22 +105,28 @@
     text-align: center;
 }
 
-/* Flex-box card and grids */
+/* Alert */
+.alert{
+    background-color: var(--light-color);
+    padding: 10px,20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.alert i{
+    margin-right: 10px;
+}
+.alert-success{
+    background-color: var(--success-color);
+    color: #fff;
+}
 
+
+/* Flex-box card and grids */
 .flex{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-.card{
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 10px;
 }
 
 .grid{
@@ -107,7 +141,6 @@
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
 }
-
 
 /* Margin */
 
